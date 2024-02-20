@@ -1,0 +1,82 @@
+body {
+  display: grid;
+  justify-content: center;
+  font-family: Roboto;
+}
+
+svg {
+  height: 20px;
+}
+
+.sidebar-icon > svg {
+  fill: white;
+}
+
+#dashboard-icon > svg {
+  height: 40px;
+}
+
+.container {
+  max-width: 1168px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.top-header {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.bottom-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+}
+
+.main-content {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.sidebar {
+  background-color: #0284c7;
+  color: white;
+  font-weight: 500;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 1fr 3fr 6fr;
+}
+
+/* borders */
+
+.header,
+.sidebar,
+.main-content {
+  border: 1px solid red;
+}
+
+.top-header,
+.bottom-header {
+  border: 1px solid orange;
+}
+
+.top-sidebar,
+.main-sidebar,
+.bottom-sidebar {
+  border: 1px solid blue;
+}
+
+.projects,
+.right-side {
+  border: 1px solid green;
+}
+
