@@ -14,7 +14,7 @@ input {
   height: 20px;
   border-radius: 10px;
   border: none;
-  background-color: #cbd5e1;
+  background-color: #e2e8f0;
 }
 
 img {
@@ -38,16 +38,19 @@ img {
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 1250px;
+  max-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
+  border-right: 1px solid black;
 }
 
 .header {
   grid-column: 2 / 3;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding-bottom: 10px;
 }
 
 .top-header {
@@ -89,6 +92,10 @@ img {
   margin-left: 20px;
 }
 
+.header-text-container p {
+  font-size: small;
+}
+
 .header-buttons {
   grid-column: 2 / 3;
   margin-right: 20px;
@@ -108,9 +115,104 @@ button {
 }
 
 .main-content {
+  background-color: #e2e8f0;
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 3fr 1fr;
+}
+
+.projects,
+.right-side {
+  margin-left: 20px;
+}
+
+.right-side {
+  margin-right: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  border-left: 5px solid #facc15;
+  box-shadow: 1px 1px 10px #aaaaaa;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: white;
+} 
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-icons div {
+  margin: 15px;
+}
+
+.card-text,
+.news,
+.project-title {
+  color: #71717a;
+  font-weight: 400;
+}
+
+.news {
+  font-size: small;
+}
+
+.card-title,
+.news-title {
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.announcements-container,
+.trending-container {
+  box-shadow: 1px 1px 10px #aaaaaa;
+  border-radius: 10px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.news,
+.trend {
+  margin: 20px;
+}
+
+.news {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#last-news {
+  border-bottom: 0;
+}
+
+.trend {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.profile-info-container {
+  margin-left: 10px;
+  font-size: small;
+}
+
+.nickname {
+  font-weight: bold;
 }
 
 .sidebar {
@@ -149,6 +251,7 @@ button {
 .main-sidebar,
 .bottom-sidebar {
   align-content: baseline;
+  margin-bottom: 30px;
 }
 
 .main-sidebar > div {
@@ -158,28 +261,3 @@ button {
 .bottom-sidebar > div {
   margin-top: 10px;
 }
-
-/* borders */
-
-/* .header, */
-/* .sidebar, */
-.main-content {
-  border: 1px solid red;
-}
-
- /*.top-header,
-.bottom-header {
-  border: 1px solid orange;
-}*/
-
-/*.top-sidebar,
-.main-sidebar,
-.bottom-sidebar {
-  border: 1px solid blue;
-} */
-
-.projects,
-.right-side {
-  border: 1px solid green;
-}
-
