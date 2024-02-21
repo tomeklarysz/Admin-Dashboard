@@ -14,10 +14,11 @@ svg {
 
 #dashboard-icon > svg {
   height: 40px;
+  fill: white;
 }
 
 .container {
-  max-width: 1168px;
+  max-width: 1150px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 4fr;
@@ -53,7 +54,44 @@ svg {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   display: grid;
-  grid-template-rows: 1fr 3fr 6fr;
+  /* grid-template-columns: 1fr 4fr; */
+  grid-template-rows: 1fr 2fr 6fr;
+}
+
+.top-sidebar,
+.main-sidebar,
+.bottom-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+#dashboard-icon {
+  grid-column: 1 / 2;
+  margin: 10px;
+}
+
+.top-sidebar > div {
+  grid-column: 2 / 3;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.sidebar-icon {
+  grid-column: 1 / 2;
+  margin-left: 20px;
+}
+
+.main-sidebar,
+.bottom-sidebar {
+  align-content: baseline;
+}
+
+.main-sidebar > div {
+  margin-top: 10px;
+}
+
+.bottom-sidebar > div {
+  margin-top: 10px;
 }
 
 /* borders */
